@@ -1,0 +1,28 @@
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10vh;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #4C7866;
+}
+
+header div{
+    display: flex;
+    align-items: center;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.banner{
+    height: 100vh;
+    background-image: url(img/background.jfif);
+    background-size: cover;
+    background-position: center;
+}
