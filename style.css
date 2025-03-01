@@ -26,3 +26,18 @@ body{
     background-size: cover;
     background-position: center;
 }
+
+.h_link {
+    margin-right: 4vh;
+    margin-left: 4vh;
+
+}
+
+.search {
+    width: 1000px;
+    margin-left: 0;
+}
+
+.logo {
+    margin-left: 7vh;
+}
