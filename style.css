@@ -1,334 +1,431 @@
 header{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 10vh;
-    width: 100%;
-    position: fixed;
-    top: 0;
-    left: 0;
-    background-color: #4C7866;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 10vh;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #4C7866;
 }
 
 header div{
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 body{
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 .banner{
-    height: 100vh;
-    background-image: url(img/62c9805b-4087-42ee-bdf1-294c7a3d0bcc.jpg);
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  height: 100vh;
+  background-image: url(img/62c9805b-4087-42ee-bdf1-294c7a3d0bcc.jpg);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .h_link {
-    margin-right: 4vh;
-    margin-left: 4vh;
+  margin-right: 4vh;
+  margin-left: 4vh;
 
 }
 
 .search {
-    width: 1000px;
-    margin-left: 5;
+  width: 1000px;
+  margin-left: 5;
 }
 
 .logo {
-    margin-left: 1vh;
+  margin-left: 1vh;
 }
 
 html {
-    background-color: #222;
-  }
-  
-  .carrousel {
-    -webkit-perspective: 250px;
-    -moz-perspective: 250px;
-    width: 35%;
-    height: 60%;
-    top: 50px;
-    position: relative;
-    margin: 0 auto;
-  }
-  
-  @-webkit-keyframes carrousel {
-    from {
-      -webkit-transform: rotateY(360deg) translateZ(100px) rotateY(-360deg);
-      -moz-transform: rotateY(360deg) translateZ(100px) rotateY(-360deg);
-      z-index: 10;
-      opacity: 0.9;
-    }
-    50% {
-      z-index: -10;
-    }
-    to {
-      -webkit-transform: rotateY(0deg) translateZ(100px) rotateY(0deg);
-      -moz-transform: rotateY(0deg) translateZ(100px) rotateY(0deg);
-      z-index: 10;
-      opacity: 0.9;
-    }
-  }
-  
-  @-moz-keyframes carrousel {
-    from {
-      -moz-transform: rotateY(360deg) translateZ(100px) rotateY(-360deg);
-      z-index: 10;
-      opacity: 0.9;
-    }
-    50% {
-      z-index: -10;
-    }
-    to {
-      -moz-transform: rotateY(0deg) translateZ(100px) rotateY(0deg);
-      z-index: 10;
-      opacity: 0.9;
-    }
-  }
-  
-  .card {
-    width: 50px;
-    height: 80px;
-    background-color: #442222;
-    font-size: 40px;
-    opacity: 0;
-    position: absolute;
-    top: 35px;
-    left: 125px;
-    border: solid darkgray 2px;
-    border-radius: 8px;
-    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
-    text-align: center;
-    -webkit-animation-name: carrousel;
-    -moz-animation-name: carrousel;
-    -webkit-animation-duration: 8s;
-    -moz-animation-duration: 8s;
-    -webkit-animation-iteration-count: infinite;
-    -moz-animation-iteration-count: infinite;
-    -webkit-animation-timing-function: linear;
-    -moz-animation-timing-function: linear;
-  }
-  
-  .card:hover {
-    border: solid #4466cc 3px;
-    box-shadow: 0px 0px 10px #4466cc;
-  }
-  
-  #c7 {
-    background-image: url(http://lorempixel.com/g/50/80/people/8);
-  }
-  #c6 {
-    background-image: url(http://lorempixel.com/g/50/80/people/7);
-    -webkit-animation-delay: -1s;
-    -moz-animation-delay: -1s;
-  }
-  #c5 {
-    background-image: url(http://lorempixel.com/g/50/80/people/6);
-    -webkit-animation-delay: -2s;
-    -moz-animation-delay: -2s;
-  }
-  #c4 {
-    background-image: url(http://lorempixel.com/g/50/80/people/5);
-    -webkit-animation-delay: -3s;
-    -moz-animation-delay: -3s;
-  }
-  #c3 {
-    background-image: url(http://lorempixel.com/g/50/80/people/4);
-    -webkit-animation-delay: -4s;
-    -moz-animation-delay: -4s;
-  }
-  #c2 {
-    background-image: url(http://lorempixel.com/g/50/80/people/3);
-    -webkit-animation-delay: -5s;
-    -moz-animation-delay: -5s;
-  }
-  #c1 {
-    background-image: url(http://lorempixel.com/g/50/80/people/2);
-    -webkit-animation-delay: -6s;
-    -moz-animation-delay: -6s;
-  }
-  #c0 {
-    background-image: url(http://lorempixel.com/g/50/80/people/1);
-    -webkit-animation-delay: -7s;
-    -moz-animation-delay: -7s;
+  background-color: #222;
+}
+
+.carrousel {
+  -webkit-perspective: 250px;
+  -moz-perspective: 250px;
+  width: 45%;
+  height: 60%;
+  top: 50px;
+  position: relative;
+  margin: 0 auto;
+}
+
+@-webkit-keyframes carrousel {
+  from {
+    -webkit-transform: rotateY(360deg) translateZ(100px) rotateY(-360deg);
+    -moz-transform: rotateY(360deg) translateZ(100px) rotateY(-360deg);
+    z-index: 10;
+    opacity: 0.9;
   }
 
-  .card {
-    overflow: visible;
-    width: 190px;
-    height: 254px;
+  
+
+  50% {
+    z-index: -10;
   }
-  
-  .content {
-    width: 100%;
-    height: 100%;
-    transform-style: preserve-3d;
-    transition: transform 300ms;
-    box-shadow: 0px 0px 10px 1px #000000ee;
-    border-radius: 5px;
+  to {
+    -webkit-transform: rotateY(0deg) translateZ(100px) rotateY(0deg);
+    -moz-transform: rotateY(0deg) translateZ(100px) rotateY(0deg);
+    z-index: 10;
+    opacity: 0.9;
   }
-  
-  .front, .back {
-    background-color: #151515;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    backface-visibility: hidden;
-    -webkit-backface-visibility: hidden;
-    border-radius: 5px;
-    overflow: hidden;
+}
+
+@-moz-keyframes carrousel {
+  from {
+    -moz-transform: rotateY(360deg) translateZ(100px) rotateY(-360deg);
+    z-index: 10;
+    opacity: 0.9;
   }
-  
-  .back {
-    width: 100%;
-    height: 100%;
-    justify-content: center;
-    display: flex;
-    align-items: center;
-    overflow: hidden;
+  50% {
+    z-index: -10;
   }
-  
-  .back::before {
-    position: absolute;
-    content: ' ';
-    display: block;
-    width: 160px;
-    height: 160%;
-    background: linear-gradient(90deg, transparent, #c24bd4,#c24bd4, #c24bd4, #c24bd4, transparent);
-    animation: rotation_481 5000ms infinite linear;
+  to {
+    -moz-transform: rotateY(0deg) translateZ(100px) rotateY(0deg);
+    z-index: 10;
+    opacity: 0.9;
   }
-  
-  .back-content {
-    position: absolute;
-    width: 99%;
-    height: 99%;
-    background-color: #294b24;
-    border-radius: 5px;
-    color: white;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 30px;
+}
+
+.card {
+  width: 50px;
+  height: 80px;
+  background-color: #442222;
+  font-size: 40px;
+  opacity: 0;
+  position: absolute;
+  top: 35px;
+  left: 125px;
+  border: solid darkgray 2px;
+  border-radius: 8px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  -webkit-animation-name: carrousel;
+  -moz-animation-name: carrousel;
+  -webkit-animation-duration: 8s;
+  -moz-animation-duration: 8s;
+  -webkit-animation-iteration-count: infinite;
+  -moz-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+  -moz-animation-timing-function: linear;
+}
+
+.card:hover {
+  border: solid #4466cc 3px;
+  box-shadow: 0px 0px 10px #4466cc;
+}
+
+#c7 {
+  background-image: url(http://lorempixel.com/g/50/80/people/8);
+}
+#c6 {
+  background-image: url(http://lorempixel.com/g/50/80/people/7);
+  -webkit-animation-delay: -1s;
+  -moz-animation-delay: -1s;
+}
+#c5 {
+  background-image: url(http://lorempixel.com/g/50/80/people/6);
+  -webkit-animation-delay: -2s;
+  -moz-animation-delay: -2s;
+}
+#c4 {
+  background-image: url(http://lorempixel.com/g/50/80/people/5);
+  -webkit-animation-delay: -3s;
+  -moz-animation-delay: -3s;
+}
+#c3 {
+  background-image: url(http://lorempixel.com/g/50/80/people/4);
+  -webkit-animation-delay: -4s;
+  -moz-animation-delay: -4s;
+}
+#c2 {
+  background-image: url(http://lorempixel.com/g/50/80/people/3);
+  -webkit-animation-delay: -5s;
+  -moz-animation-delay: -5s;
+}
+#c1 {
+  background-image: url(http://lorempixel.com/g/50/80/people/2);
+  -webkit-animation-delay: -6s;
+  -moz-animation-delay: -6s;
+}
+#c0 {
+  background-image: url(http://lorempixel.com/g/50/80/people/1);
+  -webkit-animation-delay: -7s;
+  -moz-animation-delay: -7s;
+}
+
+.card {
+  overflow: visible;
+  width: 190px;
+  height: 254px;
+}
+
+.content {
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: transform 300ms;
+  box-shadow: 0px 0px 10px 1px #000000ee;
+  border-radius: 5px;
+}
+
+.front, .back {
+  background-color: #151515;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.back {
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+.back::before {
+  position: absolute;
+  content: ' ';
+  display: block;
+  width: 160px;
+  height: 160%;
+  background: linear-gradient(90deg, transparent, #c24bd4,#c24bd4, #c24bd4, #c24bd4, transparent);
+  animation: rotation_481 5000ms infinite linear;
+}
+
+.back-content {
+  position: absolute;
+  width: 99%;
+  height: 99%;
+  background-color: #294b24;
+  border-radius: 5px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.card:hover .content {
+  transform: rotateY(180deg);
+}
+
+@keyframes rotation_481 {
+  0% {
+    transform: rotateZ(0deg);
   }
-  
-  .card:hover .content {
-    transform: rotateY(180deg);
+
+  0% {
+    transform: rotateZ(360deg);
   }
-  
-  @keyframes rotation_481 {
-    0% {
-      transform: rotateZ(0deg);
-    }
-  
-    0% {
-      transform: rotateZ(360deg);
-    }
+}
+
+.front {
+  transform: rotateY(180deg);
+  color: white;
+}
+
+.front .front-content {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.front-content .badge {
+  background-color: #00000055;
+  padding: 2px 10px;
+  border-radius: 10px;
+  backdrop-filter: blur(2px);
+  width: fit-content;
+}
+
+.description {
+  box-shadow: 0px 0px 10px 5px #00000088;
+  width: 100%;
+  padding: 10px;
+  background-color: #00000099;
+  backdrop-filter: blur(5px);
+  border-radius: 5px;
+}
+
+.title {
+  font-size: 11px;
+  max-width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.title p {
+  width: 50%;
+}
+
+.card-footer {
+  color: #ffffff88;
+  margin-top: 5px;
+  font-size: 8px;
+}
+
+.front .img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.circle {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  background-color: #ffbb66;
+  position: relative;
+  filter: blur(15px);
+  animation: floating 2600ms infinite linear;
+}
+
+#bottom {
+  background-color: #ff8866;
+  left: 50px;
+  top: 0px;
+  width: 150px;
+  height: 150px;
+  animation-delay: -800ms;
+}
+
+#right {
+  background-color: #ff2233;
+  left: 160px;
+  top: -80px;
+  width: 30px;
+  height: 30px;
+  animation-delay: -1800ms;
+}
+
+@keyframes floating {
+  0% {
+    transform: translateY(0px);
   }
-  
-  .front {
-    transform: rotateY(180deg);
-    color: white;
+
+  50% {
+    transform: translateY(10px);
   }
-  
-  .front .front-content {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    padding: 10px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+
+  100% {
+    transform: translateY(0px);
   }
-  
-  .front-content .badge {
-    background-color: #00000055;
-    padding: 2px 10px;
-    border-radius: 10px;
-    backdrop-filter: blur(2px);
-    width: fit-content;
+}
+
+@-webkit-keyframes carrousel_1 {
+  from {
+    -webkit-transform: rotateY(360deg) translateZ(100px) rotateY(-360deg);
+    -moz-transform: rotateY(360deg) translateZ(100px) rotateY(-360deg);
+    z-index: 10;
+    opacity: 0.9;
   }
+
   
-  .description {
-    box-shadow: 0px 0px 10px 5px #00000088;
-    width: 100%;
-    padding: 10px;
-    background-color: #00000099;
-    backdrop-filter: blur(5px);
-    border-radius: 5px;
+
+  50% {
+    z-index: -10;
   }
-  
-  .title {
-    font-size: 11px;
-    max-width: 100%;
-    display: flex;
-    justify-content: space-between;
+  to {
+    -webkit-transform: rotateY(0deg) translateZ(100px) rotateY(0deg);
+    -moz-transform: rotateY(0deg) translateZ(100px) rotateY(0deg);
+    z-index: 10;
+    opacity: 0.9;
   }
-  
-  .title p {
-    width: 50%;
+}
+
+@-moz-keyframes carrousel_1 {
+  from {
+    -moz-transform: rotateY(360deg) translateZ(100px) rotateY(-360deg);
+    z-index: 10;
+    opacity: 0.9;
   }
-  
-  .card-footer {
-    color: #ffffff88;
-    margin-top: 5px;
-    font-size: 8px;
+  50% {
+    z-index: -10;
   }
-  
-  .front .img {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center;
+  to {
+    -moz-transform: rotateY(0deg) translateZ(100px) rotateY(0deg);
+    z-index: 10;
+    opacity: 0.9;
   }
-  
-  .circle {
-    width: 90px;
-    height: 90px;
-    border-radius: 50%;
-    background-color: #ffbb66;
-    position: relative;
-    filter: blur(15px);
-    animation: floating 2600ms infinite linear;
+}
+
+@-webkit-keyframes carrousel_2 {
+  from {
+    -webkit-transform: rotateY(360deg) translateZ(100px) rotateY(-360deg);
+    -moz-transform: rotateY(360deg) translateZ(100px) rotateY(-360deg);
+    z-index: 10;
+    opacity: 0.9;
   }
+
   
-  #bottom {
-    background-color: #ff8866;
-    left: 50px;
-    top: 0px;
-    width: 150px;
-    height: 150px;
-    animation-delay: -800ms;
+
+  50% {
+    z-index: -10;
   }
-  
-  #right {
-    background-color: #ff2233;
-    left: 160px;
-    top: -80px;
-    width: 30px;
-    height: 30px;
-    animation-delay: -1800ms;
+  to {
+    -webkit-transform: rotateY(0deg) translateZ(100px) rotateY(0deg);
+    -moz-transform: rotateY(0deg) translateZ(100px) rotateY(0deg);
+    z-index: 10;
+    opacity: 0.9;
   }
-  
-  @keyframes floating {
-    0% {
-      transform: translateY(0px);
-    }
-  
-    50% {
-      transform: translateY(10px);
-    }
-  
-    100% {
-      transform: translateY(0px);
-    }
+}
+
+@-moz-keyframes carrousel_2 {
+  from {
+    -moz-transform: rotateY(360deg) translateZ(100px) rotateY(-360deg);
+    z-index: 10;
+    opacity: 0.9;
   }
+  50% {
+    z-index: -10;
+  }
+  to {
+    -moz-transform: rotateY(0deg) translateZ(100px) rotateY(0deg);
+    z-index: 10;
+    opacity: 0.9;
+  }
+}
+
+.carrousel_1 {
+  -webkit-perspective: 250px;
+  -moz-perspective: 250px;
+  width: 45%;
+  height: 60%;
+  top: 50px;
+  position: relative;
+  margin: 0 auto;
+}
+
+.carrousel_2 {
+  -webkit-perspective: 250px;
+  -moz-perspective: 250px;
+  width: 35%;
+  height: 60%;
+  top: 50px;
+  position: relative;
+  margin: 0 auto;
+}
   
